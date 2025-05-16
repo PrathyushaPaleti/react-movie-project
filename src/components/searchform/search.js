@@ -1,0 +1,32 @@
+import React, { useState } from 'react';
+
+const SearchComponent = ({ initialQuery = '', onSearch }) => {
+  const [inputValue, setInputValue] = useState(initialQuery);
+
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value);
+  };
+
+  const handleSearch = () => {
+    if (onSearch) {
+      onSearch(inputValue);
+    }
+  };
+
+  return (
+    <div className="search-container">
+      <input
+        type="text"
+        className="search-input"
+        placeholder="What do you want to watch?"
+        value={inputValue}
+        onChange={handleInputChange}
+      />
+      <button className="search-button" onClick={handleSearch}>
+        Search
+      </button>
+    </div>
+  );
+};
+
+export default SearchComponent;
