@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './search.css';
 
 const SearchComponent = ({ initialQuery = '', onSearch }) => {
   const [inputValue, setInputValue] = useState(initialQuery);
