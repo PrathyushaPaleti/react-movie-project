@@ -105,7 +105,6 @@ function App() {
       React.createElement(
         'h1',  
         { style: { textAlign: 'center' } },
-        'Search for a movie'
       ),
       React.createElement(
         SearchComponent, 
