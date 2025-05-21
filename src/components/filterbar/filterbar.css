@@ -23,12 +23,12 @@
 }
 
 .filter-bar__genre-button:hover {
-  color: #e50914;
+  color: #f65261;
 }
 
 .filter-bar__genre-button.active {
-  color: #e50914;
-  border-bottom: 2px solid #e50914;
+  color: #f65261;
+  border-bottom: 2px solid #f65261;
 }
 
 .filter-bar__sort {
@@ -54,7 +54,7 @@
 
 .filter-bar__sort-select:focus {
   outline: none;
-  border-color: #e50914;
+  border-color: #f65261;
 }
 
 .filter-bar__sort-select option {
