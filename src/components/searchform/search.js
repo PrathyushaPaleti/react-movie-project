@@ -15,7 +15,7 @@ const SearchComponent = ({ initialQuery = '', onSearch }) => {
   };
 
   return (
-    <div className="search-container">
+    <div className="search-container" style={{ textAlign: 'center',padding: 10 }}>
       <input
         type="text"
         className="search-input"
