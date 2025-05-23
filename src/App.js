@@ -1,8 +1,9 @@
-import './App.css';
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import FilterBar from './components/filterbar/filterbar';
 import HeroImage from './components/heroimage/heroimage';
 import MoviesList from './components/movietile/movielist';
+import './App.css';
 
 function App() {
 
@@ -22,20 +23,29 @@ function App() {
     // Perform sorting actions based on the selected option
   };  
 
-  return React.createElement(
-    'div',
-    null,
-    <div>
-      <HeroImage onAddMovie={handleAddMovie} />
-    </div>,
-    <div style={{ backgroundColor: '#1e1e1e', color: 'white', padding: '20px' }}>
-      <FilterBar genres={genres} onGenreSelect={handleGenreSelect} onSortChange={handleSortChange} />
-      {/* Content for movies can be added below */}
-    </div>,
-    <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-      <MoviesList />
-    </div>
-  );
+  return (
+      <Router>
+        <Routes>
+          {/* Define the root route */}
+          <Route
+            path="/"
+            element={
+              <>
+                <div>
+                  <HeroImage onAddMovie={handleAddMovie} />
+                </div>
+                <div style={{ backgroundColor: '#1e1e1e', color: 'white', padding: '20px' }}>
+                  <FilterBar genres={genres} onGenreSelect={handleGenreSelect} onSortChange={handleSortChange} />
+                </div>
+                <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+                  <MoviesList />
+                </div>
+              </>
+            }
+          />
+        </Routes>
+      </Router>
+    );
 }
 
 
