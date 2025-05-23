@@ -18,7 +18,7 @@
 .hero-image__logo {
   font-size: 24px;
   font-weight: bold;
-  color: red;
+  color: #F65261;
 }
 
 .hero-image__add-movie {
@@ -33,7 +33,7 @@
 }
 
 .hero-image__add-movie:hover {
-  background-color: #e50914;
+  background-color: #F65261;
 }
 
 .hero-image__content {
