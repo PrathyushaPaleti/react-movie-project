@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router';
 import FilterBar from './components/filterbar/filterbar';
 import HeroImage from './components/heroimage/heroimage';
 import MoviesList from './components/movietile/movielist';
