@@ -27,6 +27,12 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
+### Run below application in your local for backend Movies API
+
+Once this application run, it acts as backend API to the react application
+
+https://github.com/VarvaraZadnepriak/MoviesAPI.ReactJS
+
 
 ### `npm run build` fails to minify
 
