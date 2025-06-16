@@ -40,18 +40,12 @@ const MovieTile = ({ movie, onClick, onEdit, onDelete }) => {
     setShowContextMenu((prevState) => !prevState);
   };
 
-  const handleTileClick = () => {
-    if (onClick) onClick(movie);
-  };
-
   return (
-    <div className="movie-tile" onClick={handleTileClick}>
+    <div className="movie-tile" onClick={onClick}>
       <img className="movie-tile__poster" src={movie.imageUrl} alt={movie.name} />
       <div className="movie-tile__info">
-        <div className="movie-tile__header">
-          <h3 className="movie-tile__name">{movie.name}</h3>
-          <span className="movie-tile__year">{movie.releaseYear}</span>
-        </div>
+        <h3 className="movie-tile__name">{movie.name}</h3>
+        <span className="movie-tile__year">{movie.releaseYear}</span>
         <p className="movie-tile__genres">{movie.genres.join(', ')}</p>
         <button className="movie-tile__menu-button" onClick={toggleContextMenu}>
           &#8942;

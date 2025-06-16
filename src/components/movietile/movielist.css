@@ -1,0 +1,72 @@
+/* Movies List Container */
+.movies-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  gap: 10px; /* Reduced spacing between tiles */
+  padding: 20px;
+  background-color: white; /* White background for the container */
+}
+
+.movies-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  gap: 10px; /* Reduced spacing between tiles */
+  padding: 20px;
+  background-color: white; /* White background for the container */
+
+  /* Center alignment with flexbox */
+  justify-content: center; /* Center alignment horizontally */
+  margin: 0 auto; /* Margin auto horizontally aligns the container */
+}
+
+/* Movie Tiles */
+.movie-tile {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8; /* Light background for tiles */
+  border: 1px solid #ddd; /* Subtle border for individual tiles */
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.movie-tile:hover {
+  transform: translateY(-5px); /* Slight elevation on hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Movie Poster */
+.movie-tile__poster {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; /* Ensures images maintain aspect ratio */
+  border-bottom: 1px solid #ddd;
+}
+
+/* Movie Info Section */
+.movie-tile__info {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-tile__name {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  color: #333; /* Darker color for text */
+}
+
+.movie-tile__year {
+  font-size: 12px;
+  color: #777; /* Subtle text color */
+  margin-top: 5px;
+}
+
+.movie-tile__genres {
+  font-size: 12px;
+  color: #999; /* Light grey for genres */
+  margin-top: 5px;
+}
