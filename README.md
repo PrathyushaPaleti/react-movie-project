@@ -33,7 +33,9 @@ Once this application run, it acts as backend API to the react application
 
 https://github.com/VarvaraZadnepriak/MoviesAPI.ReactJS
 
+![image](https://github.com/user-attachments/assets/dbe6d83c-b67f-4a57-852c-c53106103b84)
 
-### `npm run build` fails to minify
+![image](https://github.com/user-attachments/assets/90c8c4d6-fe94-4705-8830-c25b29f36bd6)
+
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
